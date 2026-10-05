@@ -1,0 +1,28 @@
+﻿# 构建与依赖产物（绝不入库 —— node_modules 数万文件会撑爆仓库且 git 历史洗不掉）
+node_modules/
+frontend/node_modules/
+frontend/build/
+backend/data/
+dist/
+*.err
+public/locales/_backup_*/
+
+# 运行时/本地状态
+*.log
+*.db
+*.db-shm
+*.db-wal
+conf.ini
+data/
+.pid
+.build.lock
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 备份文件（repack_assets 的 assets.zip.bak 等）
+*.bak
+
